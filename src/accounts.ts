@@ -98,7 +98,7 @@ export async function newAccount(
       fcl.authorizations([authorization]),
       fcl.proposer(authorization),
       fcl.payer(authorization),
-      fcl.limit(100),
+      fcl.limit(999999),
     ])
     .then(fcl.decode)
 
@@ -141,7 +141,7 @@ export async function updateAccount(
       ]),
       fcl.proposer(authorization),
       fcl.payer(authorization),
-      fcl.limit(100),
+      fcl.limit(999999),
     ])
     .then(fcl.decode)
 
@@ -210,7 +210,7 @@ export async function fundAccount(
       fcl.proposer(minterAuthz),
       fcl.authorizations(authorizations),
       fcl.payer(minterAuthz),
-      fcl.limit(9999),
+      fcl.limit(999999),
     ])
     .then(fcl.decode)
 

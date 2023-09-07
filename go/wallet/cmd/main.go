@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/onflow/fcl-dev-wallet/go/wallet"
+	"github.com/spacepluk/fcl-dev-wallet/go/wallet"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 )
